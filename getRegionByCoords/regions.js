@@ -50,12 +50,12 @@ function getRegionByCoords(coordinates)
   //проверим в каком регионе лежит данная точка
   var regionId=0;
   var regionName="Неизвестный";
-  for(i in mapJs.regions)
+  for(i in regions)
   {
-    if (mapJs.regions[i].geom.contains(coords))
+    if (regions[i].geom.contains(coords))
     {
-      var regionId = mapJs.regions[i].id;
-      var regionName = mapJs.regions[i].name;
+      var regionId = regions[i].id;
+      var regionName = regions[i].name;
       break;
     }
   }
