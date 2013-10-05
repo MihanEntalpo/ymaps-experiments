@@ -52,7 +52,7 @@ function getRegionByCoords(coordinates)
   var regionName="Неизвестный";
   for(i in regions)
   {
-    if (regions[i].geom.contains(coords))
+    if (regions[i].geom.contains(coordinates))
     {
       var regionId = regions[i].id;
       var regionName = regions[i].name;
