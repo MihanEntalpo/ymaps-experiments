@@ -1,0 +1,3 @@
+#!/bin/bash
+# Git Add, Commit, Checkout, Merge, Checkout, Push
+git add . && git commit -m " $1 " && git checkout gh-pages && git merge master && git checkout master && git push --all
